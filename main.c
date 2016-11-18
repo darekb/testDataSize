@@ -4,7 +4,7 @@
 #ifndef F_CPU
 #define F_CPU 16000000UL
 #endif
-volatile uint16_t i;
+volatile uint8_t i, j;
 #define LED (1 << PB0)
 #define LED_TOG PORTB ^= LED
 
@@ -18,7 +18,9 @@ int main(void) {
 
 ISR(TIMER0_OVF_vect) {
   //after 0.01632sek.
-  for (i = 0; i < 65536; i++) {
-    LED_TOG;
+  for (i = 0; i < 160; i++) {
+    for (j = 0; j < 160; j++) {
+      LED_TOG;
+    }
   }
 }
