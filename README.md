@@ -1,9 +1,9 @@
 # testDataSize
-Test what program size will be depend of three foreach loop with uint8_t counter or one foreach loop with uint32_t counter
-# one uint32_t counter
+Test what program size will be depend of two foreach loop with uint8_t counter or one foreach loop with uint16_t counter
+# one uint16_t counter
 
-Program:     302 bytes (0.9% Full)
+Program:     222 bytes (0.7% Full)
 (.text + .data + .bootloader)
 
-Data:          4 bytes (0.2% Full)
+Data:          2 bytes (0.1% Full)
 (.data + .bss + .noinit)
