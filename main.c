@@ -18,7 +18,7 @@ int main(void) {
 
 ISR(TIMER0_OVF_vect) {
   //after 0.01632sek.
-  for (i = 0; i < 65536; i++) {
+  for (i = 0; i < 25600; i++) {
     LED_TOG;
   }
 }
